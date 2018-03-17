@@ -1,0 +1,30 @@
+<div class="row">
+  <%= simple_form_for(@customer_request) do |form| %>
+    <%= render 'shared/errors', model: form.object %>
+
+    <div class="form-group">
+      <%= form.label :customer_full_name, class: "sr-only" %>
+      <%= form.text_field :name, placeholder: t(:customer_full_name), id: :name %>
+    </div>
+    <br />
+
+    <div class="form-inputs">
+      <%= form.label :business_name, class: "sr-only" %>
+      <%= form.text_field :business_name, placeholder: t(:business_name), id: :business_name %>
+    </div>
+
+    <div class="form-inputs">
+      <%= form.label :email, class: "sr-only" %>
+      <%= form.text_field :email, placeholder: t(:email), id: :email %>
+    </div>
+
+    <div class="form-inputs">
+      <%= form.label :telephone_number, class: "sr-only" %>
+      <%= form.text_field :telephone_number, placeholder: t(:telephone_number), id: :telephone_number %>
+    </div>
+
+    <div class="form-actions">
+      <%= form.button :submit %>
+    </div>
+  <% end %>
+</div>
