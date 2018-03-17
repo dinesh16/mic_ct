@@ -16,3 +16,9 @@ en:
     notes_max_255_chars: "Notes can contain max 255 chars"
     reference_less_50_chars: "Reference can contain 50 chars"
     internal_error_retry_later: "Internal app error, try again later."
+  service_not_available: Lead Api Service not available, Please try again later
+  thank_you_message: Your request was submitted successfully and that Makeitcheaper will contact you
+  customer_full_name: Your full name
+  business_name: Business Name
+  email: Your email address
+  telephone_number: Your telephone number
