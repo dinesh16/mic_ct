@@ -1,30 +1,30 @@
-<div class="row">
-  <%= simple_form_for(@customer_request) do |form| %>
-    <%= render 'shared/errors', model: form.object %>
-
+<%= simple_form_for(@customer_request) do |form| %>
+  <br /><h3 class="col-sm-6"><%= t(:customer_request_form)%> </h3>
+  <div class=""><%= render 'shared/errors', model: form.object %></div>
+  <div class="form col-sm-6">
     <div class="form-group">
       <%= form.label :customer_full_name, class: "sr-only" %>
-      <%= form.text_field :name, placeholder: t(:customer_full_name), id: :name %>
+      <%= form.text_field :name, placeholder: t(:customer_full_name), id: :name, class: "form-control string required" %>
     </div>
-    <br />
 
-    <div class="form-inputs">
+    <div class="form-group">
       <%= form.label :business_name, class: "sr-only" %>
-      <%= form.text_field :business_name, placeholder: t(:business_name), id: :business_name %>
+      <%= form.text_field :business_name, placeholder: t(:business_name), id: :business_name, class: "form-control" %>
     </div>
 
-    <div class="form-inputs">
+    <div class="form-group">
       <%= form.label :email, class: "sr-only" %>
-      <%= form.text_field :email, placeholder: t(:email), id: :email %>
+      <%= form.text_field :email, placeholder: t(:email), id: :email, class: "form-control" %>
     </div>
 
-    <div class="form-inputs">
+    <div class="form-group">
       <%= form.label :telephone_number, class: "sr-only" %>
-      <%= form.text_field :telephone_number, placeholder: t(:telephone_number), id: :telephone_number %>
+      <%= form.text_field :telephone_number, placeholder: t(:telephone_number), id: :telephone_number, class: "form-control" %>
     </div>
 
-    <div class="form-actions">
-      <%= form.button :submit %>
+    <div class="form-group">
+      <%= form.button :submit, class: "btn-lg btn-info"%>
     </div>
-  <% end %>
-</div>
+  </div>
+<% end %>
+

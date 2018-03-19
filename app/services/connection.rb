@@ -17,7 +17,7 @@ class Connection
     @connection ||= Faraday.new(url: BASE_URL) do |conn|
       conn.response :json, content_type: 'application/json'
       conn.request :url_encoded
-      conn.adapter :net_http
+      conn.adapter Faraday.default_adapter
     end
   end
 end

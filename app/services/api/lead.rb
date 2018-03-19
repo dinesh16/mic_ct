@@ -7,7 +7,7 @@ module Api
         :post,
         lead_api_endpoint,
         params.merge(api_access_credentials)
-      ).symbolize_keys
+      )
     end
 
     private

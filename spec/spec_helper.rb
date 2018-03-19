@@ -12,6 +12,7 @@ RSpec.configure do |config|
     mocks.verify_partial_doubles = true
   end
   config.shared_context_metadata_behavior = :apply_to_host_groups
+  config.default_formatter = 'doc'
 
   Dir['./spec/support/shared_context/*.rb'].each { |f| require f }
 end

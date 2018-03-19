@@ -43,6 +43,7 @@ group :test do
   gem 'factory_bot_rails', '~> 4.8', '>= 4.8.2'
   gem 'faker'
   gem 'rails-controller-testing'
+  gem 'rspec-json_expectations'
   gem 'rspec-rails', '~> 3.7'
   gem 'shoulda-matchers'
   gem 'vcr', '~> 4.0'

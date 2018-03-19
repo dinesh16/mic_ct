@@ -1,11 +1,9 @@
 <% if model.api_errors.present? %>
-  <div id='error_explanation'>
-    <h2><%= pluralize(model.api_errors.count, 'errors') %> </h2>
-
+  <div id='error_explanation' class="text-danger">
     <ul>
-    <% model.api_errors.each do |message| %>
-      <li><%= message %></li>
-    <% end %>
+      <% model.api_errors.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
     </ul>
   </div>
 <% end %>
